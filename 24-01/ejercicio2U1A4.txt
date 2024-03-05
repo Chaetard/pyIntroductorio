@@ -1,0 +1,17 @@
+Algoritmo Ejercicio2
+    Definir millasHora = 70
+    Definir primerTiempo = 6
+    Definir segundoTiempo = 10
+    Definir tercerTiempo = 15
+    
+    Definir distancia1 = millasHora * primerTiempo
+    Definir distancia2 = millasHora * segundoTiempo
+    Definir distancia3 = millasHora * tercerTiempo
+    
+    Escribir "Las millas recorridas en 6 horas son de: "
+    Escribir distancia1
+    Escribir "Las millas recorridas en 10 horas son de: "
+    Escribir distancia2
+    Escribir "Las millas recorridas en 15 horas son de: "
+    Escribir distancia3
+FinAlgoritmo

@@ -1,0 +1,17 @@
+Algoritmo Ejercicio1
+    Leer artiuculo1
+    Leer artiuculo2
+    Leer artiuculo3
+    Leer artiuculo4
+    Leer artiuculo5
+    
+    Definir subtotal = artiuculo1 + artiuculo2 + artiuculo3 + artiuculo4 + artiuculo5
+    Definir iva = subtotal * 0.07
+    
+    Escribir "El subtotal es: "
+    Escribir subtotal
+    Escribir "El Impuesto es de: "
+    Escribir iva
+    Escribir "El total es: "
+    Escribir (subtotal + iva)
+FinAlgoritmo

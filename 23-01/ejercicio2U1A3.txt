@@ -1,0 +1,5 @@
+Algoritmo Ejercicio2
+	Leer ingresarCantidad
+    Definir num1 = 43560
+	Escribir ingresarCantidad/num1
+FinAlgoritmo

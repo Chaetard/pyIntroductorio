@@ -1,0 +1,29 @@
+Algoritmo Ejercicio3
+    Definir accionesCompradas = 2000
+    Definir preciodeAccion = 40.00
+    Definir comisionCompra = 0.03
+    
+    Definir accionesVendidas = 2000
+    Definir preciodeVenta = 42.75
+    Definir porcentajeVentaComision = 0.03
+    
+    Definir montoComprado = accionesCompradas * preciodeAccion
+    Definir comisiondeCompra = montoComprado * comisionCompra
+    
+    Definir MontoTotalVenta = accionesVendidas * preciodeVenta
+    Definir comiVenta = MontoTotalVenta * porcentajeVentaComision
+    
+    Definir dineroSobrante = MontoTotalVenta - comiVenta
+    
+    Escribir "Cantidad pagada por las acciones: ", montoComprado
+    Escribir "Comisión pagada al corredor al comprar: ", comisiondeCompra
+    Escribir "Cantidad por la que Joe vendió las acciones: ", MontoTotalVenta
+    Escribir "Comisión pagada al corredor al vender: ", comiVenta
+    Escribir "Cantidad de dinero que le queda a Joe: ", dineroSobrante
+    
+    Si dineroSobrante > 0 Entonces
+        Escribir "Él ganó dinero."
+    Sino
+        Escribir "Él perdió dinero."
+    FinSi
+FinAlgoritmo

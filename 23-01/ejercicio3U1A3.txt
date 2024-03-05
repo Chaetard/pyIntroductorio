@@ -1,0 +1,11 @@
+Algoritmo Ejercicio3
+	Leer ingresarFecha
+    Definir fecha = ingresarFecha
+    Definir  anio = fecha // 10000
+    Definir residuo = fecha % 10000
+    Definir mes = residuo // 100
+    Definir dia = residuo % 100
+	Escribir "Año: ", anio
+    Escribir "Mes ", mes
+    Escribir "Dia", dia
+FinAlgoritmo
