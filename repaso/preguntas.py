@@ -19,4 +19,5 @@ def expre3(var1, var2):
 def expre4(var1):
     return (4*math.pi*(var1 ** 2))
 
-print(expre4(10))
+def expre5(var1):
+    return 4/3 * math.pi * (var1 ** 3)
