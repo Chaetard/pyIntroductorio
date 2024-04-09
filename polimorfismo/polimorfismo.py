@@ -137,5 +137,5 @@ if __name__ == "__main__":
     prestamojuan = PagoHipoteca(180000,.09,(12*20))
     
     #al metodo de calular pago le paso un parametro si requiere que se muestre por año, false si es por cada mes y true si requiere visualizar por cada año
-    prestamojuan.calcular_pago(False)
+    prestamojuan.calcular_pago(True)
 
