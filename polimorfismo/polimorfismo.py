@@ -25,7 +25,6 @@ class Prestamo:
     @interes.setter
     def interes(self, valor):
         self._interes = valor
-
     @plazos.setter
     def plazos(self, valor):
         self._plazos = valor
@@ -124,7 +123,7 @@ if __name__ == "__main__":
     print("Pagos Variables")
     
     #prestamo de 1250 con un interes mensual de 1% a 25 meses
-    prestamopepe = PagosVariables(1250,.01,25)
+    prestamopepe = PagosVariables(30000,.01,(12*5))
     prestamopepe.calcular_pago()
     
     
