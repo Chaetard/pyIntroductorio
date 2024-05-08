@@ -1,0 +1,30 @@
+{% extends "index.html" %} {% block titulo %} Agregar juego {% endblock %}
+{%block contenido %}
+
+
+<div class="container d-flex eoqparams">
+    <div>
+<form method="post"  >
+   
+    <label>Producto:
+        <select name="producto_id">
+            {% for producto in productos %}
+            <option value="{{ producto['id'] }}" >{{ producto['nombre'] }}</option>
+            {% endfor %}
+        </select>
+        <input type="number" name="costo_mantener" placeholder="costo_mantener" required>
+        <input type="number" name="costo_pedido" placeholder="costo_pedido" required>
+
+
+
+    </label>
+    <button type="submit" class="btn btn-danger" >Ver EOQ</button>
+</form>
+
+</div>
+</div>
+
+
+
+{% endblock %}
+

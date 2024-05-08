@@ -5,6 +5,7 @@ from mysql.connector import Error
 import sys
 
          
+         
 ''' 
 
 Creare clases  para creacion eliminacion consulta y eliminacion de datos y tambien como se requiere crear tablas y eliminarlas

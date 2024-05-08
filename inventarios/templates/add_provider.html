@@ -1,0 +1,16 @@
+{% extends "index.html" %} {% block titulo %} Agregar juego {% endblock %}
+{%block contenido %}
+
+<form method="post">
+    <label>Nombre: <input type="text" name="nombre"></label>
+    <label>Producto:
+        <select name="producto_id">
+            {% for producto in productos %}
+            <option value="{{ producto['id'] }}">{{ producto['nombre'] }}</option>
+            {% endfor %}
+        </select>
+    </label>
+    <button type="submit" class="btn  btn-success">Add Provider</button>
+</form>
+
+{% endblock %}

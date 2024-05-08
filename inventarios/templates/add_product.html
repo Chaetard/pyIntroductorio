@@ -1,0 +1,28 @@
+{% extends "index.html" %} {% block titulo %} Agregar juego {% endblock %}
+{%block contenido %}
+
+<div class="container">
+  <form method="post">
+    <div class="row">
+      <div class="col-3">
+        <label>Nombre: <input type="text" name="nombre" /></label>
+      </div>
+      <div class="col-3">
+        <label>Stock: <input type="number" name="stock" /></label>
+      </div>
+      <div class="col-3">
+        <label>Costo: <input type="text" name="costo" /></label>
+      </div>
+
+      <div class="col-3">
+        <label>Precio: <input type="text" name="precio" /></label>
+      </div>
+    </div>
+
+    <div class="row padd">
+    <button type="submit" class="btn btn-success col-2">Add Product</button>
+    </div>
+  </form>
+</div>
+
+{% endblock %}

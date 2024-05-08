@@ -15,13 +15,13 @@ def index():
     cursor.execute('SELECT * FROM usuario1')
     results = cursor.fetchall()
     conn.close()
-    return str(results)
+    return str( results )
 
 
 @app.route('/secon')
 def secondary():
     
-    return str("holaz")
+    return str("<h1>holaz<h1>")
 
 if __name__ == '__main__':
     app.run(debug=True)

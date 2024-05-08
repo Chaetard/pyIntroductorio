@@ -37,11 +37,7 @@ class PagosFijos(Prestamo):
        
        #FORMULA PARA SACAR EL PLAZO FIJO, BUSQUEDA POR INTERNET
         plazo_fijo = (self.prestamo * self.interes * (1 + self.interes) ** self.plazos) / ((1 + self.interes) ** self.plazos - 1)
-    
-       
-    
         saldo_restante = self.prestamo
-        
         print("{:5} {:13} {:9} {:7} {:13}".format("Plazo", "Abono Capital", "Pago Fijo", "Intereses", "Valor Final"))
         for i in range(self.plazos):
             pago_interes = saldo_restante * self.interes
@@ -136,5 +132,5 @@ if __name__ == "__main__":
     prestamojuan = PagoHipoteca(180000,.09,(12*20))
     
     #al metodo de calular pago le paso un parametro si requiere que se muestre por año, false si es por cada mes y true si requiere visualizar por cada año
-    prestamojuan.calcular_pago(True)
+    prestamojuan.calcular_pago(False)
 

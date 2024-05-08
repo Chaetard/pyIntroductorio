@@ -1,12 +1,10 @@
 class Intro:
     x = 10
     cadena  = "Hola123"
-    
     def metodoSaluda(self):
         print("\n")
         print("Hola desde el metodoSaluda, desde la clase animal")
-        print("\n")
-        
+        print("\n")  
     def suma(self):
         self.x = Intro.x+10
         print(self.x)

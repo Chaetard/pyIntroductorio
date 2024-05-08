@@ -1,0 +1,11 @@
+
+{% extends "index.html" %} {% block titulo %} Agregar juego {% endblock %}
+{%block contenido %}
+
+<form method="post" class="container">
+    <label>Username: <input type="text" name="username"></label>
+    <label>Password: <input type="password" name="password"></label>
+    <button type="submit" class="btn btn-success">Register</button>
+</form>
+
+{% endblock %}

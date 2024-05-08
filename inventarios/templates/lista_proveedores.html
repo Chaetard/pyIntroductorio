@@ -1,0 +1,15 @@
+{% extends "index.html" %} {% block titulo %} Agregar juego {% endblock %}
+{%block contenido %}
+
+<ul>
+
+{% for proveedor in proveedores %}
+ <li> {{ proveedor['id'] }} {{ proveedor['nombre'] }} </li>
+{% endfor %}
+
+</ul>
+
+
+
+
+{% endblock %}
