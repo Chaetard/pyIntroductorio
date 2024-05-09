@@ -36,7 +36,7 @@ def index():
 def register():
     if request.method == 'POST':
         username = request.form['username']
-        password = request.form['password']  # En producción, se debería encriptar
+        password = request.form['password']  
 
         db = get_db()
         cursor = db.cursor(dictionary=True)
@@ -82,10 +82,9 @@ def calculate_eoq(producto_id):
     costo_pedido = 10.0  # Igual que el costo de mantener
 
     print(producto_id, costo_mantener,  costo_pedido)
-    # Llama al procedimiento almacenado y pasa los parámetros
     cursor.execute("CALL CalcularEOQSUPER(%s, %s, %s, @eoq)", (producto_id, costo_mantener, costo_pedido))
     cursor.execute("SELECT @eoq")
-    eoq = cursor.fetchone()  # Obtiene el valor de eoq
+    eoq = cursor.fetchone()  
 
     print(eoq)
 
@@ -105,10 +104,9 @@ def calculate_eoq_parametros(producto_id,costo_mantener, costo_pedido):
     print(producto_id)
 
     print(producto_id, costo_mantener,  costo_pedido)
-    # Llama al procedimiento almacenado y pasa los parámetros
     cursor.execute("CALL CalcularEOQSUPER(%s, %s, %s, @eoq)", (producto_id, costo_mantener, costo_pedido))
     cursor.execute("SELECT @eoq")
-    eoq = cursor.fetchone()  # Obtiene el valor de eoq
+    eoq = cursor.fetchone() 
 
     print(eoq)
 
@@ -129,7 +127,7 @@ def listarProductosParams():
         costo_mantener = request.form['costo_mantener']
         costo_pedido = request.form['costo_pedido']
         
-        # Llama directamente a la función calculate_eoq_parametros con los valores
+        # Llama directamente a la funsionzzzzz calculate_eoq_parametros con los valores
         return calculate_eoq_parametros(producto_id, costo_mantener, costo_pedido)
     
     return render_template('eoq_params.html', productos=productos)
