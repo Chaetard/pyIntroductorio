@@ -1,7 +1,7 @@
 print('SISTEMA VACACIONAL DE RAPPI\n')
 
 nombre = input('Escribe tu nombre: ')
-clave = int(input(nombre + ' escribe tu clave: '))
+clave = int(input(nombre + ' escribe tu clavse: '))
 años = float(input(nombre + ' escribe tus años trabajados: '))
 
 controlador = False
